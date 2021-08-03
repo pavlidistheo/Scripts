@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Prints "Hello World" to the terminal.
+
+echo "Hello World"

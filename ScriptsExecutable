@@ -1,0 +1,6 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Makes all scripts inside the "Scripts" folder executable.
+
+cd GitHub/Scripts/
+chmod +x *

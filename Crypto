@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Prints cryptocurrency prices to the terminal based on the rate.sx project: https://github.com/chubin/rate.sx.
+
+curl rate.sx/?n=20

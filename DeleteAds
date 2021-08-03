@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Deletes "client.json" file of the Brave browser.
+
+rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/ads_service/client.json

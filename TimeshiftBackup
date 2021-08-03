@@ -1,0 +1,6 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Deletes previous Timeshift backups and creates a new one. Requires sudo privileges.
+
+timeshift --delete-all
+timeshift --create --comments "Full Backup"

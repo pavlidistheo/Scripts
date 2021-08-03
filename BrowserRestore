@@ -1,0 +1,25 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Restores Brave, Chrome & Firefox from "Data" hard disk.
+
+# Brave restore.
+
+rm -rf .config/BraveSoftware/* # Deletes current Brave config.
+cp -r /run/media/pavlidis/Data/Backup/Browsers/Brave/brave.tar.bz2 ~/.config/BraveSoftware # Copies Brave compressed config file.
+tar -xvf ~/.config/BraveSoftware/brave.tar.bz2  # Decompresses Brave config file
+rm ~/.config/BraveSoftware/brave.tar.bz2 # Removes Brave compressed backup file.
+
+
+# Chrome restore.
+
+# rm -rf .config/chromium/* # Deletes current Chromium config.
+# cp -r /run/media/pavlidis/Data/Backup/Browsers/Chromium/chromium.tar.bz2 ~/.config/chromium # Copies Chromium compressed config file.
+# tar -xvf ~/.config/chromium/chromium.tar.bz2 # Decompresses Chromium config file.
+# rm ~/.config/chromium/chromium.tar.bz2 # Removes Chromium compressed backup file.
+
+# Firefox restore.
+
+rm -rf .mozilla/* # Deletes current Firefox config.
+cp -r /run/media/pavlidis/Data/Backup/Browsers/Firefox/firefox.tar.bz2 ~/ # Copies Firefox compressed config file.
+tar -xvf firefox.tar.bz2  # Decompresses Firefox config file.
+rm firefox.tar.bz2 # Removes Firefox compressed backup file.

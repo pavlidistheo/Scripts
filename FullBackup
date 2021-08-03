@@ -1,0 +1,7 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Backups Browser files, Scripts and Wallpapers to "Data" hard disk.
+
+BrowserBackup
+ScriptsBackup
+rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Wallpapers/ /run/media/pavlidis/Data/Pictures/Wallpapers

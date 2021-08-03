@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Backups "Scripts" folder to "Data" hard dick.
+
+rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Scripts/ /run/media/pavlidis/Data/Backup/Scripts

@@ -4,3 +4,4 @@
 
 cd GitHub/Scripts/
 chmod +x *
+echo "All scripts inside the "Scripts" folder are executable."

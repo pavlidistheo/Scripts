@@ -19,3 +19,4 @@ mv brave.tar.bz2 /run/media/pavlidis/Data/Backup/Browsers/Brave/ # Moves Brave b
 rm -rf /run/media/pavlidis/Data/Backup/Browsers/Firefox/* # Deletes previous Firefox backup.
 tar -jcvf firefox.tar.bz2 .mozilla # Backups and compresses Firefox files.
 mv firefox.tar.bz2 /run/media/pavlidis/Data/Backup/Browsers/Firefox/ # Moves Firefox backup.
+echo "Brave & Firefox backup completed."

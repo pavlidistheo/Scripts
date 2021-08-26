@@ -4,3 +4,4 @@
 
 timeshift --delete-all
 timeshift --create --comments "Full Backup"
+echo "Timeshift backup completed."

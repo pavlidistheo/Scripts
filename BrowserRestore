@@ -24,4 +24,4 @@ cp -r /run/media/pavlidis/Data/Backup/Browsers/Firefox/firefox.tar.bz2 ~/ # Copi
 tar -xvf firefox.tar.bz2  # Decompresses Firefox config file.
 rm firefox.tar.bz2 # Removes Firefox compressed backup file.
 
-echo "Brave & Firefox restore completed."
+echo -e "\e[32mBrave & Firefox restore completed."

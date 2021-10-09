@@ -44,7 +44,7 @@ var WORDS =
 var UNFOLLOW_FOLLOWERS = false; //If set to true, it will also remove followers (unless they are skipped).
 var MS_PER_CYCLE = 20; //Milliseconds per cycle (each call to 'performUnfollow').
 var MAXIMUM_UNFOLLOW_ACTIONS_PER_CYCLE = null; //Maximum of unfollow actions to perform, per cycle (each call to 'performUnfollow'). Set to 'null' to have no limit.
-var MAXIMUM_UNFOLLOW_ACTIONS_TOTAL = 5800; //Maximum of unfollow actions to perform, in total (among all calls to 'performUnfollow'). Set to 'null' to have no limit.
+var MAXIMUM_UNFOLLOW_ACTIONS_TOTAL = 5900; //Maximum of unfollow actions to perform, in total (among all calls to 'performUnfollow'). Set to 'null' to have no limit.
 var SKIP_USERS = //Users that we do not want to unfollow (even if they are not following you back):
 [
 	//Place the user names that you want to skip here (they will not be unfollowed):

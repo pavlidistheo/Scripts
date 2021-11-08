@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Removes Orphans.
+
+sudo pacman -Rs $(pacman -Qdtq)

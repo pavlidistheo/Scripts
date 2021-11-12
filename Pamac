@@ -2,4 +2,4 @@
 # Author: Theodoros Pavlidis
 # Removes Orphans.
 
-sudo pacman -Rs $(pacman -Qdtq)
+sudo pacman -Rns $(pacman -Qdtq)

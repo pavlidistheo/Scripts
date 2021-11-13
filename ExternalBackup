@@ -2,15 +2,15 @@
 # Author: Theodoros Pavlidis
 # Backups files to external hard drive.
 
-rsync -avh --delete /run/media/pavlidis/Data/Backup/ /run/media/pavlidis/Pavlidis/Backup
-rsync -avh --delete /run/media/pavlidis/Data/Comics/ /run/media/pavlidis/Pavlidis/Comics
-rsync -avh --delete /run/media/pavlidis/Data/E-Books/ /run/media/pavlidis/Pavlidis/E-Books
-rsync -avh --delete /run/media/pavlidis/Data/Games/ /run/media/pavlidis/Pavlidis/Games
-rsync -avh --delete /run/media/pavlidis/Data/"ISO's"/ /run/media/pavlidis/Pavlidis/"ISO's"
-rsync -avh --delete /run/media/pavlidis/Data/Movies/ /run/media/pavlidis/Pavlidis/Movies
-rsync -avh --delete /run/media/pavlidis/Data/Music/ /run/media/pavlidis/Pavlidis/Music
-rsync -avh --delete /run/media/pavlidis/Data/Pictures/ /run/media/pavlidis/Pavlidis/Pictures
-rsync -avh --delete /run/media/pavlidis/Data/Progs/ /run/media/pavlidis/Pavlidis/Progs
-rsync -avh --delete /run/media/pavlidis/Data/Tutorials/ /run/media/pavlidis/Pavlidis/Tutorials
-rsync -avh --delete /run/media/pavlidis/Data/Work/ /run/media/pavlidis/Pavlidis/Work
+rsync -avh --delete /mnt/Data/Backup/ /run/media/pavlidis/Pavlidis/Backup
+rsync -avh --delete /mnt/Data/Comics/ /run/media/pavlidis/Pavlidis/Comics
+rsync -avh --delete /mnt/Data/E-Books/ /run/media/pavlidis/Pavlidis/E-Books
+rsync -avh --delete /mnt/Data/Games/ /run/media/pavlidis/Pavlidis/Games
+rsync -avh --delete /mnt/Data/"ISO's"/ /run/media/pavlidis/Pavlidis/"ISO's"
+rsync -avh --delete /mnt/Data/Movies/ /run/media/pavlidis/Pavlidis/Movies
+rsync -avh --delete /mnt/Data/Music/ /run/media/pavlidis/Pavlidis/Music
+rsync -avh --delete /mnt/Data/Pictures/ /run/media/pavlidis/Pavlidis/Pictures
+rsync -avh --delete /mnt/Data/Progs/ /run/media/pavlidis/Pavlidis/Progs
+rsync -avh --delete /mnt/Data/Tutorials/ /run/media/pavlidis/Pavlidis/Tutorials
+rsync -avh --delete /mnt/Data/Work/ /run/media/pavlidis/Pavlidis/Work
 echo -e "\e[32mExternal backup completed."

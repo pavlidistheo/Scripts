@@ -5,7 +5,7 @@
 # Brave restore.
 
 rm -rf .config/BraveSoftware/* # Deletes current Brave config.
-cp -r /run/media/pavlidis/Data/Backup/Browsers/Brave/brave.tar.bz2 ~/.config/BraveSoftware # Copies Brave compressed config file.
+cp -r /mnt/Data/Backup/Browsers/Brave/brave.tar.bz2 ~/.config/BraveSoftware # Copies Brave compressed config file.
 tar -xvf ~/.config/BraveSoftware/brave.tar.bz2  # Decompresses Brave config file
 rm ~/.config/BraveSoftware/brave.tar.bz2 # Removes Brave compressed backup file.
 
@@ -20,7 +20,7 @@ rm ~/.config/BraveSoftware/brave.tar.bz2 # Removes Brave compressed backup file.
 # Firefox restore.
 
 rm -rf .mozilla/* # Deletes current Firefox config.
-cp -r /run/media/pavlidis/Data/Backup/Browsers/Firefox/firefox.tar.bz2 ~/ # Copies Firefox compressed config file.
+cp -r /mnt/Data/Backup/Browsers/Firefox/firefox.tar.bz2 ~/ # Copies Firefox compressed config file.
 tar -xvf firefox.tar.bz2  # Decompresses Firefox config file.
 rm firefox.tar.bz2 # Removes Firefox compressed backup file.
 

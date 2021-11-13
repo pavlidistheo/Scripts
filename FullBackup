@@ -4,5 +4,5 @@
 
 BrowserBackup
 ScriptsBackup
-rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Wallpapers/ /run/media/pavlidis/Data/Pictures/Wallpapers
+rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Wallpapers/ /mnt/Data/Pictures/Wallpapers
 echo -e "\e[32mFull backup completed."

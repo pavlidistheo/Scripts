@@ -2,5 +2,5 @@
 # Author: Theodoros Pavlidis
 # Backups "Scripts" folder to "Data" hard dick.
 
-rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Scripts/ /run/media/pavlidis/Data/Backup/Scripts
+rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Scripts/ /mnt/Data/Backup/Scripts
 echo -e "\e[32mScripts backup completed."

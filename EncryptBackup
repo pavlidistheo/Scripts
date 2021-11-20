@@ -1,0 +1,9 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Backups Encrypted USB Stick to "Data" hard Disk.
+
+rm -rf /mnt/Data/Work/Βενζινάδικο/*
+cd /run/media/pavlidis/0a07ff32-1bad-400f-bfeb-bef306fa9fd0/SmartManager
+7z a -p -mx=1 -mhe -t7z -r SmartManager.7z Wayland/ Xorg/ Zsh/
+mv SmartManager.7z /mnt/Data/Work/Βενζινάδικο/
+echo -e "\e[32mBackup is complete."

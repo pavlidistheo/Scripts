@@ -1,0 +1,10 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Formats USB stick and encrypts it.
+
+echo -e "\e[32mOnce fdisk is running type "n", then "p", hit enter three times and type "W"."
+sudo fdisk /dev/sdb
+sudo cryptsetup --type luks2 -c aes-xts-plain64 -h sha256 -s 256 --pbkdf argon2id -i 5000 --use-urandom luksFormat /dev/sdb1
+sudo cryptsetup luksOpen /dev/sdb1 SmartManager
+sudo mkfs.ext4 /dev/mapper/SmartManager
+echo -e "\e[32mPlease reboot."

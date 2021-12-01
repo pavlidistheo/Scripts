@@ -2,10 +2,10 @@
 # Author: Theodoros Pavlidis
 # Formats USB stick and encrypts it.
 
-echo -e "\e[32mUnmount the USB stick before running this Script."
-echo -e "\e[32mOnce fdisk is running type "d" to delete the existing partition."
-echo -e "\e[32mType "n" to create a new partition. Type "p", hit enter three times, type "Y" and type "w"."
-echo -e "\e[32mType "YES" and enter passphrase twice."
+echo -e "\e[32m01. Unmount the USB stick before running this Script."
+echo -e "\e[32m02. Once fdisk is running type 'd' to delete the existing partition."
+echo -e "\e[32m03. Type 'n' to create a new partition. Type 'p', hit enter three times, type 'Y' and type 'w'."
+echo -e "\e[32m04. Type 'YES' and enter passphrase twice."
 sudo fdisk /dev/sdb
 sudo cryptsetup --type luks2 -c aes-xts-plain64 -h sha256 -s 256 -i 5000 luksFormat /dev/sdb1
 sudo cryptsetup luksOpen /dev/sdb1 SmartManager

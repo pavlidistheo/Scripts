@@ -10,4 +10,4 @@ sudo fdisk /dev/sdb
 sudo cryptsetup --type luks2 -c aes-xts-plain64 -h sha256 -s 256 -i 5000 luksFormat /dev/sdb1
 sudo cryptsetup luksOpen /dev/sdb1 SmartManager
 sudo mkfs.ext4 /dev/mapper/SmartManager
-echo -e "\e[32mEncryption is completed. Please reboot."
+echo -e "\e[32mPlease reboot."

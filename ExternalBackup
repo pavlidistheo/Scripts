@@ -13,4 +13,4 @@ rsync -avh --delete /mnt/Data/Pictures/ /run/media/pavlidis/Pavlidis/Pictures
 rsync -avh --delete /mnt/Data/Progs/ /run/media/pavlidis/Pavlidis/Progs
 rsync -avh --delete /mnt/Data/Tutorials/ /run/media/pavlidis/Pavlidis/Tutorials
 rsync -avh --delete /mnt/Data/Work/ /run/media/pavlidis/Pavlidis/Work
-echo -e "\e[32mExternal backup completed."
+echo -e "\e[92mExternal backup completed.\e[0m"

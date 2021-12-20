@@ -1,0 +1,9 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Prints various examples with single & double quotes.
+
+echo "Hello $USER"  # Prints: Hello pavlidis.
+echo $USER          # Prints: pavlidis.
+echo "Hello \$USER" # Prints: Hello $USER.
+echo 'Hello $USER'  # Prints: Hello $USER.
+echo -e "\e[92mHello $USER\e[0m"

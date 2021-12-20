@@ -4,4 +4,4 @@
 
 cd GitHub/Scripts/
 chmod +x *
-echo -e "\e[32mAll scripts inside the "Scripts" folder are executable."
+echo -e "\e[92mAll scripts inside the "Scripts" folder are executable.\e[0m"

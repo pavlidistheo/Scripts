@@ -3,4 +3,4 @@
 # Backups "Scripts" folder to "Data" hard dick.
 
 rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Scripts/ /mnt/Data/Backup/Scripts
-echo -e "\e[32mScripts backup completed."
+echo -e "\e[92mScripts backup completed.\e[0m"

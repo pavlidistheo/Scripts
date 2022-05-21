@@ -1,0 +1,6 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Converts .webp images to .jpg.
+
+magick *.webp image.jpg
+rm fghbv *.webp

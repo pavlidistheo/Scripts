@@ -1,7 +1,0 @@
-#!/bin/bash
-# Author: Theodoros Pavlidis
-# Backups Config Files to to "Data" hard disk.
-
-rm -rf /mnt/Data/Backup/Config\ Files/* # Deletes previous backup files.
-rsync -avh --delete .bashrc /home/pavlidis/.config/neofetch/config.conf /home/pavlidis/.config/katerc /etc/bash.bashrc /etc/xdg/reflector/reflector.conf /etc/pacman.conf /etc/nanorc /mnt/Data/Backup/Config\ Files
-dconf dump /com/gexperts/Tilix/ > /mnt/Data/Backup/Config\ Files/tilix.dconf

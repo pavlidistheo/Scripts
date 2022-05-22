@@ -1,6 +1,6 @@
 #!/bin/bash
 # Author: Theodoros Pavlidis
-# Calculates Sofia's age.
+# Calculates Ioanna's age.
 
 d=`echo 29`
 m=`echo 07`

@@ -3,4 +3,4 @@
 # Converts .webp images to .jpg.
 
 magick *.webp image.jpg
-rm fghbv *.webp
+rm *.webp

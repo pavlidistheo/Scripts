@@ -10,4 +10,4 @@ sudo fdisk /dev/sdb
 sudo cryptsetup --type luks2 -c aes-xts-plain64 -h sha256 -s 256 -i 5000 luksFormat /dev/sdb1
 sudo cryptsetup luksOpen /dev/sdb1 SmartManager
 sudo mkfs.ext4 /dev/mapper/SmartManager
-echo -e "\e[92mEncryption is completed. Please reboot the machine.\e[0m"
+echo -e "\e[92mEncryption is completed. Please reboot and run 'sudo chown -R pavlidis /run/media/path_to_file/'\e[0m"

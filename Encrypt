@@ -2,7 +2,7 @@
 # Author: Theodoros Pavlidis
 # Formats USB stick and encrypts it.
 
-echo -e "\e[92m01. Unmount the USB stick before running this Script.\e[0m"
+echo -e "\e[92m01. Unmount the USB stick and any external hard disks before running this Script.\e[0m"
 echo -e "\e[92m02. Once fdisk is running type 'd' to delete the existing partition.\e[0m"
 echo -e "\e[92m03. Type 'n' to create a partition. Type 'p', hit enter three times, type 'Y' and type 'w'.\e[0m"
 echo -e "\e[92m04. Type 'YES' and enter passphrase twice.\e[0m"

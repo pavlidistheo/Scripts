@@ -1,5 +1,14 @@
 #!/bin/bash
 # Author: Theodoros Pavlidis
-# Uninstalls unceessary apps and deletes the config files..
+# Uninstalls unceessary apps and deletes the config files.
 
+sudo pacman -Rsu konsole lftp
+echo -e "\e[92mPrograms uninstalled.\e[0m"
 
+rm -r .local/share/konsole .local/share/lftp
+rm .config/konsolerc
+echo -e "\e[92mRemnants removed.\e[0m"
+
+#/home/pavlidis/.config/konsolerc     /home/pavlidis/.local/share/konsole
+Pamac
+echo -e "\e[92mDebloat is completed.\e[0m"

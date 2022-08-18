@@ -9,6 +9,5 @@ rm -r .local/share/konsole .local/share/lftp
 rm .config/konsolerc
 echo -e "\e[92mRemnants removed.\e[0m"
 
-#/home/pavlidis/.config/konsolerc     /home/pavlidis/.local/share/konsole
 Pamac
 echo -e "\e[92mDebloat is completed.\e[0m"

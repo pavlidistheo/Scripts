@@ -2,10 +2,10 @@
 # Author: Theodoros Pavlidis
 # Restores Encrypted USB Stick from "Data" hard Disk.
 
-sudo mkdir /run/media/pavlidis/bc51eca7-e02f-4a4c-9399-25ba0b4ae3cc/SmartManager
-sudo cp -r /mnt/Data/Work/Βενζινάδικο/SmartManager.7z /run/media/pavlidis/bc51eca7-e02f-4a4c-9399-25ba0b4ae3cc/SmartManager
-cd /run/media/pavlidis/bc51eca7-e02f-4a4c-9399-25ba0b4ae3cc/SmartManager/
+sudo mkdir /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager
+sudo cp -r /mnt/Data/Work/Βενζινάδικο/SmartManager.7z /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager
+cd /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager/
 sudo 7za x SmartManager.7z
-sudo rm /run/media/pavlidis/bc51eca7-e02f-4a4c-9399-25ba0b4ae3cc/SmartManager/SmartManager.7z
-sudo chown -R $USER /run/media/pavlidis/bc51eca7-e02f-4a4c-9399-25ba0b4ae3cc/SmartManager/
+sudo rm /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager/SmartManager.7z
+sudo chown -R $USER /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager/
 echo -e "\e[92mRestore is complete.\e[0m"

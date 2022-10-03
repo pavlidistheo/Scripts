@@ -1,9 +1,10 @@
 #!/bin/bash
 # Author: Theodoros Pavlidis
-# Backups Browser files, Scripts and Wallpapers to "Data" hard disk.
+# Backups Browser files, Scripts, Virtual Machines and Wallpapers to "Data" hard disk.
 
 BrowserBackup
 ScriptsBackup
 ConfigBackup
+rsync -avh --delete /home/pavlidis/'VirtualBox VMs'/'Arch Linux' /mnt/Data/'Virtual Machines'
 rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Wallpapers/ /mnt/Data/Pictures/Wallpapers
 echo -e "\e[92mFull backup completed.\e[0m"

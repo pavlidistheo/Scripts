@@ -1,6 +1,0 @@
-#!/bin/bash
-# Author: Theodoros Pavlidis
-# Converts .png images to .jpg.
-
-mogrify -format jpg *.png
-rm *.png

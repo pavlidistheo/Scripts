@@ -6,18 +6,21 @@
 
 rm -rf /mnt/Data/Backup/Browsers/Brave/* # Deletes previous Brave backup.
 tar -jcf brave.tar.bz2 .config/BraveSoftware/ # Backups and compresses Brave files.
-mv brave.tar.bz2 /mnt/Data/Backup/Browsers/Brave/ # Moves Brave backup.
+cp brave.tar.bz2 /mnt/Data/Backup/Browsers/Brave/ # Copies Brave backup.
+rm brave.tar.bz2 # Removes Brave backup.
 
 # Chrome backup.
 
 # rm -rf /run/media/pavlidis/Data/Backup/Browsers/Chromium/* # Deletes previous Chrome backup.
 # tar -jcvf chromium.tar.bz2 .config/chromium/ # Backups and compresses Chrome files.
-# mv chromium.tar.bz2 /run/media/pavlidis/Data/Backup/Browsers/Chromium/ # Moves Chrome backup.
+# cp chromium.tar.bz2 /run/media/pavlidis/Data/Backup/Browsers/Chromium/ # Copies Chrome backup.
+# rm chromium.tar.bz2 # Removes Brave backup.
 
 # Firefox backup.
 
 rm -rf /mnt/Data/Backup/Browsers/Firefox/* # Deletes previous Firefox backup.
 tar -jcf firefox.tar.bz2 .mozilla # Backups and compresses Firefox files.
-mv firefox.tar.bz2 /mnt/Data/Backup/Browsers/Firefox/ # Moves Firefox backup.
+cp firefox.tar.bz2 /mnt/Data/Backup/Browsers/Firefox/ # Copies Firefox backup.
+rm firefox.tar.bz2 # Removes Brave backup.
 
 echo -e "\e[92mBrowsers backup completed.\e[0m"

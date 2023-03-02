@@ -3,7 +3,7 @@
 # Backups files to external hard drive.
 
 rsync -avh --delete /mnt/Data/Backup/ /run/media/pavlidis/Pavlidis/Backup
-rsync -avh --delete /mnt/Data/Comics/ /run/media/pavlidis/Pavlidis/Comics
+rsync -avh --delete --exclude={'.yacreaderlibrary'} /mnt/Data/Comics/ /run/media/pavlidis/Pavlidis/Comics
 rsync -avh --delete /mnt/Data/E-Books/ /run/media/pavlidis/Pavlidis/E-Books
 rsync -avh --delete /mnt/Data/Games/ /run/media/pavlidis/Pavlidis/Games
 rsync -avh --delete /mnt/Data/"ISO's"/ /run/media/pavlidis/Pavlidis/"ISO's"

@@ -3,14 +3,21 @@
 # Backups Config Files to to "Data" hard disk.
 
 rm -rf /mnt/Data/Backup/Config\ Files/* # Deletes previous backup files.
+rsync -ah --delete ~/.bashrc /etc/bash.bashrc /mnt/Data/Backup/Config\ Files # Bash Config.
+rsync -ah --delete ~/.config/dolphinrc ~/.local/share/kxmlgui5/dolphin/dolphinui.rc /mnt/Data/Backup/Config\ Files # Dolphin Config.
+rsync -ah --delete ~/.config/katerc ~/.local/share/kxmlgui5/kate/kateui.rc /mnt/Data/Backup/Config\ Files # Kate Config
 rsync -ah --delete /etc/locale.gen /mnt/Data/Backup/Config\ Files # Locale file.
-rsync -ah --delete .bashrc /etc/bash.bashrc /mnt/Data/Backup/Config\ Files # Bash Config.
-rsync -ah --delete .config/dolphinrc .local/share/kxmlgui5/dolphin/dolphinui.rc /mnt/Data/Backup/Config\ Files # Dolphin Config.
-rsync -ah --delete .config/katerc .local/share/kxmlgui5/kate/kateui.rc /mnt/Data/Backup/Config\ Files # Kate Config.
 rsync -ah --delete /etc/nanorc /mnt/Data/Backup/Config\ Files # Nano Config.
-rsync -ah --delete .config/neofetch/config.conf /mnt/Data/Backup/Config\ Files # Neofetch Config.
+rsync -ah --delete ~/.config/neofetch/config.conf /mnt/Data/Backup/Config\ Files/ # Neofetch Config.
 rsync -ah --delete /etc/pacman.conf /mnt/Data/Backup/Config\ Files # Pacman Config.
 rsync -ah --delete /etc/xdg/reflector/reflector.conf /mnt/Data/Backup/Config\ Files # Reflector Config.
 dconf dump /com/gexperts/Tilix/ > /mnt/Data/Backup/Config\ Files/tilix.dconf # Tilix Config.
 
 echo -e "\e[92mConfig backup completed.\e[0m"
+
+
+
+
+
+
+

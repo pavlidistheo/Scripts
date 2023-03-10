@@ -5,8 +5,8 @@
 BrowserBackup
 ScriptsBackup
 ConfigBackup
-rsync -avh --delete /home/pavlidis/'VirtualBox VMs'/'Arch Linux' /mnt/Data/'Virtual Machines'
+rsync -ah --delete ~/'VirtualBox VMs'/'Arch Linux' /mnt/Data/'Virtual Machines'
 echo -e "\e[92mVirtual Machines backup completed.\e[0m"
-rsync -avh --delete --exclude={'.directory','.git','LICENSE','README.md'} /home/pavlidis/GitHub/Wallpapers/ /mnt/Data/Pictures/Wallpapers
+rsync -ah --delete --exclude={'.directory','.git','LICENSE','README.md'} ~/GitHub/Wallpapers/ /mnt/Data/Pictures/Wallpapers
 echo -e "\e[92mWallpapers backup completed.\e[0m"
 echo -e "\e[92mFull backup completed.\e[0m"

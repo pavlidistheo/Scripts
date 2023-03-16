@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Author: Theodoros Pavlidis
+# Renames the mp3's of a given folder according to their ID3 tags.
 
 import os
 from tinytag import TinyTag

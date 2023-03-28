@@ -1,5 +1,15 @@
 #!/bin/bash
 # Author: Theodoros Pavlidis
-# Removes Orphans.
+# Removes Orphans and cleans the system.
 
-sudo pacman -Rns $(pacman -Qdtq)
+sudo pacman -Rns $(pacman -Qdtq) # Removes Orphans.
+
+sudo pacman -Scc --noconfirm # Removes Package caches.
+
+sudo rm -rf /var/crash/* # Removes Crash reports.
+
+sudo rm -rf /var/log/* # Removes Application logs.
+
+rm -rf ~/.cache/* # Removes Application caches.
+
+rm -rf ~/.local/share/Trash/* # Removes Trash contents.

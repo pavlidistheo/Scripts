@@ -13,3 +13,5 @@ sudo rm -rf /var/log/* # Removes Application logs.
 rm -rf ~/.cache/* # Removes Application caches.
 
 rm -rf ~/.local/share/Trash/* # Removes Trash contents.
+
+echo -e "\e[92mOperation is completed.\e[0m"

@@ -4,7 +4,7 @@
 
 rm -rf /mnt/Data/Work/Βενζινάδικο/*
 cd /run/media/pavlidis/13b11764-3c49-4885-98b4-c1c35bdadd0c/SmartManager
-7z a -p -mx=1 -mhe -t7z -r SmartManager.7z Bash/ Hashes/ Wayland/ Xorg/ Zsh/
+7z a -p -mx=1 -mhe -t7z -r SmartManager.7z Bash/ Hashes/ Local/ Wayland/ Xorg/ Zsh/
 cp SmartManager.7z /mnt/Data/Work/Βενζινάδικο/
 rm SmartManager.7z
 echo -e "\e[92mBackup is complete.\e[0m"

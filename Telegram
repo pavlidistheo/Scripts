@@ -1,0 +1,5 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Gives executable permissions to Telegram.
+
+sudo chmod +x /usr/share/applications/org.telegram.desktop.desktop

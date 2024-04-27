@@ -3,7 +3,7 @@
 # Backups Encrypted USB Stick to "Data" hard Disk.
 
 rm -rf /mnt/Data/Work/Βενζινάδικο/*
-cd /run/media/pavlidis/c5aa26b7-53ac-4a30-8012-699708df9ff1/SmartManager
+cd /run/media/pavlidis/4b82a51a-afaf-4b65-9d81-0795be630034/SmartManager
 7z a -p -mx=1 -mhe -t7z -r SmartManager.7z Bash/ Hashes/ Local/ Wayland/ Xorg/ Zsh/
 cp SmartManager.7z /mnt/Data/Work/Βενζινάδικο/
 rm SmartManager.7z

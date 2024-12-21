@@ -1,0 +1,8 @@
+#!/bin/bash
+# Author: Theodoros Pavlidis
+# Prints the weather for Skydra.
+
+curl https://wttr.in/skydra
+
+
+
